@@ -1,0 +1,28 @@
+/* Carousel Text Content (prev/next icon) */
+.carousel-content {
+	padding: 0 15px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background: none;
+	opacity: 0.6;
+	width: auto;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+	color: #000;
+}
+
+/* Smartphone */
+@media (max-width: 768px) {
+	.carousel-control.left {
+		left : 20px;
+	}
+
+	.carousel-control.right {
+		right: 20px;
+	}
+}
+/* End Carousel Text Content */

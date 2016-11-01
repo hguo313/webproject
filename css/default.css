@@ -1,0 +1,232 @@
+/*
+Colors :
+	Gris foncé 	: #3B3B3B;
+	Gris 		: #D0D0D0;
+	Gris clair 	: #F5F5F5;
+
+	Bleu foncé	: #25386B;
+	Bleu 		: #3080B2;
+	Bleu clair	: #25A4CD;
+*/
+
+/* Line Break */
+body {
+	word-wrap: break-word;
+}
+
+/* Modal open (content moves to right) */
+body.modal-open {
+	overflow: inherit;
+	padding-right: inherit !important;
+}
+
+#loginModal .modal-dialog {
+	width: 350px;
+}
+/* End Modal open */
+
+/* Background Texture Div */
+.background-texture {
+	background-image: url("../img/texture2.png");
+	background-repeat: repeat;
+	height: 100%;
+}
+
+.background-texture h2,
+.background-texture a,
+.background-texture small {
+	color: #FFF;
+}
+
+.background-lightgrey {
+	background-color: #F5F5F5;
+}
+
+.background-grey {
+	background-color: #D0D0D0;
+}
+/* Background Texture Div */
+
+.header-page {
+	line-height: 115px;
+    margin: 0;
+}
+
+.page-header h1,
+.page-header h2,
+.page-header h3,
+.page-header h4,
+.page-header h5,
+.page-header h6 {
+	margin: 0;
+}
+
+/* Navigation */
+.navbar {
+	background: #FFF;
+	border-bottom-color: #eee;
+	margin-bottom: 0px;
+	height: 50px;
+}
+
+.navbar-brand {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.navbar-brand img {
+	height: 44px;
+}
+
+.navbar-header>a,
+.nav>li>a {
+	color: #3B3B3B;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    background-color: #eee;
+}
+
+.nav button {
+	padding: 10px 15px;
+	height: 50px;
+	border: none;
+	width: 100%;
+	color: #3B3B3B;
+    text-align: left;
+}
+
+.nav .btn-link:focus,
+.nav .btn-link:hover {
+	background-color: #eee;
+	text-decoration: none;
+    color: #3B3B3B;
+    outline: none;
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+	background-color: #3B3B3B;
+}
+/* End Navigation */
+
+/* Login User */
+.navbar-login {
+    width: 305px;
+    padding: 10px 10px 0 10px;
+}
+
+.navbar-login-session {
+    padding: 0 10px;
+}
+
+.user-icon-size {
+    font-size: 87px;
+}
+/* End Login User */
+
+/* Carousel : Content vertical centered content */
+.full-width {
+    width: 100%;
+}
+
+.carousel-caption {
+	/* IE 8 */
+	display:table-cell;
+	vertical-align:middle;
+
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+}
+/* End Carousel */
+
+/* Footer */
+footer .background-lightgrey {
+	border-top: 1px solid #D0D0D0;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+footer ul li {
+	padding: 5px 0;
+}
+
+.footer-bottom {
+	padding: 30px 0;
+}
+/* End Footer */
+
+
+/* Desktop / Large Desktop */
+@media (min-width: 992px) {
+	body {
+		padding-top: 50px;
+	}
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+	.navbar-brand .logo {
+		overflow: hidden;
+    	width: 40px;
+	}
+}
+/* End Tablet */
+
+/* Smartphone */
+@media (max-width: 768px) {
+	#loginModal .modal-dialog {
+		width: auto;
+	}
+
+	.navbar-fixed-top {
+	    position: relative;
+	    margin-bottom: 0;
+	    display: inline;
+	}
+
+	.navbar-toggle {
+		padding: 6px 10px;
+	}
+
+	.navbar-header>a,
+	.nav>li>a,
+	.nav button {
+		color: #3B3B3B !important;
+		text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	}
+
+	.nav>li>a:focus,
+	.nav>li>a:hover,
+	.nav .btn-link:focus,
+	.nav .btn-link:hover {
+	    color: #3B3B3B !important;
+    	background-color : #eee;
+    	transition: background .2s ease !important;
+	}
+
+	.carousel-caption h1 {
+		font-size: 4vw;
+	}
+	.carousel-caption h3 {
+		font-size: 2vw;
+	}
+	.carousel-caption p {
+		font-size: 1vw;
+	} 
+}
+/* End Smartphone */

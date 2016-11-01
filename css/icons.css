@@ -1,0 +1,29 @@
+/* Services */
+.index-icon {
+	padding: 20px;
+	font-size: 75px;
+	color: #25386B;
+}
+
+.services {
+	margin-bottom: 20px;
+}
+
+.companies {
+	height: 200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: table;
+}
+
+.companies .thumbnail {
+	height: 200px;
+    width: inherit;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.companies img {
+	max-height: 100%;
+}
+/* End Services */
